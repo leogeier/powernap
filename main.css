@@ -8,6 +8,19 @@
 * {
   background-color: #f2f7ff;
   font-family: 'Rubik', sans-serif;
+  
+  animation-duration: 3s;
+  animation-name: background-fade;
+}
+
+@keyframes background-fade {
+  from {
+    background-color: #f2f7ff;
+  }
+
+  to {
+    background-color: #0f274d;
+  }
 }
 
 .title {
