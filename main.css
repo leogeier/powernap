@@ -6,20 +6,47 @@
 }
 
 * {
-  background-color: #f2f7ff;
   font-family: 'Rubik', sans-serif;
-  
-  animation-duration: 3s;
-  animation-name: background-fade;
 }
 
-@keyframes background-fade {
+body {
+  background-color: #f2f7ff;
+}
+
+.fade-enabled {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+.fade-light-dark {
+  animation-name: fade-light-dark;
+}
+.fade-dark-light {
+  animation-name: fade-dark-light;
+}
+
+@keyframes fade-light-dark {
   from {
+    color: #333;
     background-color: #f2f7ff;
   }
 
   to {
+    color: white;
     background-color: #0f274d;
+  }
+}
+
+@keyframes fade-dark-light {
+  from {
+    color: white;
+    background-color: #0f274d;
+  }
+
+  to {
+    color: #333;
+    background-color: #f2f7ff;
   }
 }
 
