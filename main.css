@@ -54,12 +54,13 @@ a {
 
   color: white;
   font-size: 40px;
+  outline: none;
 
   background-color: #65acd7;
   border: 0;
   filter: drop-shadow(0px 5px 5px #6e7681);
   
-  outline: none;
+  user-select: none;
 }
 
 .nap-button:active {
